@@ -1,21 +1,23 @@
 package ro.ase.cts.clase;
 
 
-import org.w3c.dom.*;
-import org.xml.sax.SAXException;
-
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.io.Reader;
 import java.util.List;
-import java.util.Scanner;
 
-public class UniversalReader {
+import ro.ase.cts.clase.readers.PupilReader;
+
+
+
+public class UniversalReader  {
 	//TO DO 
 
 	//punct de legatura intre readere
 
 	
+	public static List<Aplicant> readAplicants(PupilReader pupilReader) throws NumberFormatException, FileNotFoundException{
+		return pupilReader.readAplicants();
+		
+	}
 
 }

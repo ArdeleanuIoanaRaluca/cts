@@ -9,13 +9,17 @@ import ro.ase.cts.clase.Angajat;
 import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.UniversalReader;
 import ro.ase.cts.clase.readers.EmployeeReader;
-
+import ro.ase.cts.clase.readers.PupilReader;
+import ro.ase.cts.clase.readers.StudentReader;
+import ro.ase.cts.clase.readers.Reader;;
 public class Program {
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
-		try {
-			listaAplicanti = EmployeeReader.readAngajati("angajati.txt");
+		try { 
+			//StudentReader e = new StudentReader();
+			listaAplicanti = UniversalReader.readAplicants(new PupilReader("elevi.txt"));
+			
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
