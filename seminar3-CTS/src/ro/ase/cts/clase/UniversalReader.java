@@ -6,6 +6,7 @@ import java.io.Reader;
 import java.util.List;
 
 import ro.ase.cts.clase.readers.PupilReader;
+import ro.ase.cts.clase.readers.StudentReader;
 
 
 
@@ -15,8 +16,8 @@ public class UniversalReader  {
 	//punct de legatura intre readere
 
 	
-	public static List<Aplicant> readAplicants(PupilReader pupilReader) throws NumberFormatException, FileNotFoundException{
-		return pupilReader.readAplicants();
+	public static List<Aplicant> readAplicants(StudentReader studentReader) throws NumberFormatException, FileNotFoundException{
+		return studentReader.readAplicants();
 		
 	}
 
