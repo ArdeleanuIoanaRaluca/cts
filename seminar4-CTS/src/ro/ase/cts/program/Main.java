@@ -2,6 +2,7 @@ package ro.ase.cts.program;
 
 import ro.ase.cts.clase.ManagerSpital;
 import ro.ase.cts.clase.ManagerSpitalLazy;
+import ro.ase.cts.clase.Parc;
 
 public class Main {
 
@@ -26,6 +27,13 @@ public class Main {
     
     System.out.println(managerLazy1.toString());
     System.out.println(managerLazy2.toString());
+    
+    Parc parc1= Parc.getInstance("AAA", 2010, 1000);
+    Parc parc2= Parc.getInstance("BBB", 2000, 2500);
+    System.out.println(parc1.toString());
+    System.out.println(parc2.toString());
+    
+    
     
 	}
 
