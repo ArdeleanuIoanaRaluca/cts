@@ -14,12 +14,13 @@ public class Program {
 		DecoratorCuMesajeSustinere decorator = new DecoratorCuMesajeSustinere(bilet);
 		decorator.rezervaBilet();
 
-		DecoratorMesajLaMultiAni decorator2 = new DecoratorMesajLaMultiAni(bilet);
+		DecoratorMesajLaMultiAni decorator2 = new DecoratorMesajLaMultiAni (bilet);
 		System.out.println();
 		decorator2.rezervaBilet();
 		
 		DecoratorAbstract decorator3 = new DecoratorMesajLaMultiAni(decorator);
 		System.out.println();
+		decorator3.rezervaBilet();
 		
 	}
 
