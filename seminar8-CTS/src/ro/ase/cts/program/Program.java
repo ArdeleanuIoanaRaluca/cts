@@ -25,6 +25,12 @@ public class Program {
 		sectiuneDesert.adaugareNod(clatite);
 		
 		meniu.afisareInformatii();
+System.out.println("-----------------------------");
+		
+		sectiuneBauturi.stergereNod(frappe);
+		sectiuneDesert.adaugareNod(frappe);
+		
+		meniu.afisareInformatii();
 		
 		
 		
