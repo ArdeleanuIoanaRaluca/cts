@@ -15,7 +15,7 @@ import ro.ase.cts.teste.categorii.TesteNormale;
 		TestGrupaWithStub.class })
 
 @IncludeCategory(TesteGetPromovabilitate.class)
-//@ExcludeCategory(TesteNormale.class)
+@ExcludeCategory(TesteNormale.class)
 public class SuitaCustom {
 }
 
