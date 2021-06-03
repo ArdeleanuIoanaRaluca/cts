@@ -3,15 +3,18 @@ package ro.ase.cts.teste;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import ro.ase.cts.dubluri.StudentStub;
 import ro.ase.cts.student.Grupa;
 import ro.ase.cts.student.IStudent;
+import ro.ase.cts.teste.categorii.TesteGetPromovabilitate;
 
 public class TestGrupaWithStub {
 
 	Grupa grupa;
 	@Test
+	@Category (TesteGetPromovabilitate.class)
 	public void testGetPromovabilitate() {
 		grupa= new Grupa(1077);
 		IStudent s1= new StudentStub();

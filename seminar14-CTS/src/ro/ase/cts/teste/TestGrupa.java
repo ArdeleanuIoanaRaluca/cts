@@ -4,10 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-
+import org.junit.experimental.categories.Category;
 
 import ro.ase.cts.student.Grupa;
 import ro.ase.cts.student.Student;
+import ro.ase.cts.teste.categorii.TesteGetPromovabilitate;
 
 public class TestGrupa {
 
@@ -26,6 +27,7 @@ public class TestGrupa {
 	}}
 	
 	@Test
+	@Category (TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateRight()
 	{
 		Student studentMarcel = new Student("Marcel");
@@ -42,12 +44,14 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category (TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateLowerBoundery()
 	{
 		assertEquals(0, grupa.getPromovabilitate(), 0.05);
 	}
 	
 	@Test
+	@Category (TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateUpperBoundery()
 	{ Grupa grupaNoua= new Grupa(1076);
 	
@@ -66,6 +70,7 @@ public class TestGrupa {
 	}
 	
 	@Test( expected = IllegalArgumentException.class)
+
 	public void testGetPromovabilitate() 
 	{
 		Grupa grupaNoua = new Grupa(1080);
